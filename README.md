@@ -7,7 +7,7 @@ Django project to manage a list of tasks you need to complete or things that you
 Python3 must be already installed on your computer.
 
 ```shell
-git clone https://github.com/lenasharabura/py-todo-list.git
+git clone https://github.com/Magus6784/to-do-list.git
 cd todo_list
 python -m venv venv
 venv/scripts/activate
