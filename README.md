@@ -38,4 +38,4 @@ Implement Todo List project;
 Create Pull Request from dev to main branch;
 Attach images of your interface (all pages) to the PR (important!). Do not attach images as links, put them directly (also important);
 Attach link to the PR as the solution for this task.
-That's all!
+That's all
