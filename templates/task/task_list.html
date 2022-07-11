@@ -12,15 +12,15 @@
     {% for task in task_list %}
         <hr>
 
-        <p>{{ task.content }}.{{ task.done|yesno:"Done, Not done" }}
+        <h3>{{ task.content }}. {{ task.done|yesno:"Done, Not done" }}
+
         <a class="btn btn-primary float-right"
            href="{% url 'task:task-list' %}">
             Complete
         </a>
+        </h3>
 
-        </p>
-
-        <p>Created: {{ task.created_at }}.
+        <p>Created: {{ task.created_at }}
         {% if task.deadline_at %}
             Deadline: {{ task.deadline_at }}
         {% endif %}
