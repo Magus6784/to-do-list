@@ -1,4 +1,4 @@
-
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import generic
@@ -11,6 +11,13 @@ class TaskListView(generic.ListView):
     model = Task
     context_object_name = "task_list"
     template_name = "task/task_list.html"
+
+
+def change_done_status(request, pk):
+    task = Task.objects.get(pk=pk)
+    task.done = not task.done
+    task.save()
+    return HttpResponseRedirect(reverse_lazy("task:task-list"))
 
 
 class TaskCreateView(generic.CreateView):

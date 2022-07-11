@@ -15,8 +15,13 @@
         <h3>{{ task.content }}. {{ task.done|yesno:"Done, Not done" }}
 
         <a class="btn btn-primary float-right"
-           href="{% url 'task:task-list' %}">
-            Complete
+           href="{% url 'task:change-done-status' pk=task.id %}">
+            {% if task.done %}
+                Undo
+            {% else %}
+                Complete
+            {% endif %}
+
         </a>
         </h3>
 
