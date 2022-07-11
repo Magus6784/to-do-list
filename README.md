@@ -3,7 +3,7 @@ In this exam project, you have to implement a todo list site.
 You should have such models:
 
 1. Task - todo list is consist of tasks. Each task should have fields for:
-  content - describes what you should do.
+  ![img.png](img.png)content - describes what you should do.
   datetime, when a task was created
   optional deadline datetime if a task should be done until some datetime
   the boolean field that marks if the task is done or not
@@ -12,7 +12,8 @@ You should have such models:
 A task can have multiple tags and a tag can be in multiple tasks.
 
 Create the home page. The home page is accessed by 127.0.0.1:8000/, where you should have:
-
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
 1.Sidebar with the links to:
   Home page
   Tag list page the sidebar should be on all pages.
