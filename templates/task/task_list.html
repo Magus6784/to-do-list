@@ -20,11 +20,11 @@
         </a>
         </h3>
 
-        <p>Created: {{ task.created_at }}
+
+        <p>Created: {{ task.created_at }}</p>
         {% if task.deadline_at %}
-            Deadline: {{ task.deadline_at }}
+            <p>Deadline: {{ task.deadline_at }}</p>
         {% endif %}
-        </p>
 
         <p>
             Tags:
